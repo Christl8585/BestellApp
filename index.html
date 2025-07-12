@@ -4,31 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BestellApp</title>
+    <link
+   
 
     <link rel="stylesheet" href="./style/assets.css" />
     <link rel="stylesheet" href="./style/fonts.css" />
     <link rel="stylesheet" href="./style/baskets.css" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/standart.css" />
-    <link rel="stylesheet" href="./style/rating.css">
+    <link rel="stylesheet" href="./style/rating.css" />
     <link rel="icon" href="./assets/favicons/favicon.ico" />
-    <link
-      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      rel="stylesheet"
-      id="bootstrap-css"
-    />
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+    <link rel="stylesheet" href="./style/hamburger.css">
+    <link rel="stylesheet" href="./style/dishSection.css">
 
-    <link
-      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
-      rel="stylesheet"
-      id="bootstrap-css"
-    />
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+   
+
   </head>
+
   <body>
     <header>
       <div class="header">
@@ -37,7 +29,35 @@
           src="./assets/logo/BestellApp-Logo.svg"
           alt="Bestell App Logo"
         />
+        <div class="overlay"></div>
+        <nav class="navbar">
+<ul class="nav-menu">
+  <button class="close-menu">X</a></button>
+  <li><a href="#">Warenkorb</a></li>
+  <li><a href="#">Speisekarte</a></li>
+  <li><a href="#contact-link">Kontakt</a></li>
+</ul>
+
+<div id="hamburger" class="hamburger">
+
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</div>
+
+
+        </nav>
       </div>
+      
+    </header>
+    <section class="dish-row">
+      
+       
+      
+     
+    </section>
+
+    <main>
       <figure>
         <img
           class="topPart"
@@ -45,17 +65,21 @@
           src="./assets/images/pizzaTopPart.jpg"
           alt="Fastfood Pic top part"
         />
-        <figcaption> <h1>Speedy for Feedy</h1>
+        <div class="picContainer">
+          <img
+            class="roundPic"
+            class="pics"
+            src="./assets/images/salad.png"
+            alt="Round salad Pic"
+          />
+        <figcaption>
+          <h1>Speedy for Feedy</h1>
           <a href="Bewertung (4,2 von 5)">Bewertung (4,2 von 5)</a>
         </figcaption>
+        
       </figure>
-        <div class="picContainer">
-        <img
-          class="roundPic"
-          class="pics"
-          src="./assets/images/salad.png"
-          alt="Round salad Pic"
-        />
+
+      
         <br />
         <section class="reviewSection">
           <label for="input-1" class="control-label"
@@ -72,8 +96,9 @@
           />
           <br />
           <label for="input-2" class="control-label"
-            >Give a rating for Knowledge:</label
-          >
+            >Give a rating for Knowledge:
+          </label>
+
           <input
             id="input-2"
             name="input-2"
@@ -85,8 +110,9 @@
           />
           <br />
           <label for="input-3" class="control-label"
-            >Give a rating for PHP:</label
-          >
+            >Give a rating for PHP:
+          </label>
+
           <input
             id="input-3"
             name="input-3"
@@ -97,30 +123,61 @@
             value="5"
           />
           <br />
-          <label for="input-4" class="accept"
-            >Bestätige deine Eingabe:</label
-            >
-            <button id="input-4">save it</button>
-            
-           
-            
+          <label for="input-4" class="accept">Bestätige deine Eingabe: </label>
+
+          <button id="input-4">save it</button>
         </section>
-      
+        <section id="categoryView"></section>
         
      
 
-      <img
-        class="bottomPart"
-        src="./assets//images/pizzaBottomPart.jpg"
-        alt="Fastfood Pic bottom part"
-      />
-    </div>
-    </header>
 
-    <footer></footer>
+        <img
+          class="bottomPart"
+          src="./assets//images/pizzaBottomPart.jpg"
+          alt="Fastfood Pic bottom part"
+        />
+      </div>
+    </main>
+
+    <footer id="contact-link">
+      <p>@ 2025 Christine`s Bestell App</p>
+      <a href="/impressum" font-size="5px">Impressum & Datenschutz</a>
+    
+      <nav>
+        <div class="sozial-links">
+          <a href="http://www.facebook.com" target="_blank" rel="noopener">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+              alt="Facebook"
+              width="32"
+            />
+          </a>
+          <a href="http://www.instagram.com" target="_blank" rel="noopener">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+              alt="Instagram"
+              width="32"
+            />
+          </a>
+          <a href="http://www.tripadvisor.de" target="_blank" rel="noopener">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1216/1216857.png"
+              alt="Tripadvisor"
+              width="32"
+            />
+          </a>
+        </div>
+      </nav>
+      
+     
+    </footer>
 
     <script src="./script/script.js"></script>
     <script src="./script/template.js"></script>
     <script src="./script/rating.js"></script>
+    <script src="./script/arrays.js"></script>
+    <script src="./script/hamburger.js"></script>
+    <script src="./script/dishSection.js"></script>
   </body>
 </html>

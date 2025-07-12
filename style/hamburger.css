@@ -1,0 +1,130 @@
+
+.close-menu{
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ header .navbar .nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+header .navbar .nav-menu a:hover{
+  background-color: green;
+}
+
+header .navbar { 
+  display: flex;
+ padding: 1rem;
+ align-items: flex-end;
+}
+
+header .navbar .nav-menu {
+  display: flex;
+  gap: 1rem;
+  
+ 
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+
+}
+
+
+.hamburger {
+  display: none;
+flex-direction: column;
+cursor: pointer;
+}
+
+
+
+
+@media (max-width: 768px){
+header .navbar .nav-menu.active {
+  display: flex;
+  justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        color: white;
+       
+}
+
+
+
+header .hamburger {
+  display: flex;
+  
+}
+header .navbar .nav-menu{
+  border: 2px solid black;
+  display: none;
+  flex-direction: column;
+  background-color:green;
+  gap: 10px;
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+  
+  
+}
+header .navbar {
+ 
+  display: flex;
+  gap: 20px;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  -webkit-box-align: none;
+}
+header .close-menu{
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+ background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  z-index: 10001;
+  color: white;
+  
+
+}
+header .close-menu:hover{
+  font-size: 23px;
+  background: rgb(2, 88, 38);
+}
+header .navbar:hover{
+  background-color: green;
+  
+}
+header .navbar .nav-menu a:hover{
+  background-color: rgb(2, 88, 38);
+  font-size: 23px;
+  } 
+  .overlay{
+    position: fixed;
+    z-index: 999;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.697);
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+  }
+  .overlay.active{
+    display: flex;
+  }
+}

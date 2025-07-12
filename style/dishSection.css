@@ -1,0 +1,87 @@
+
+
+.mainDish{
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+}
+
+.mainDish:hover .favoritPics{
+transform: scale(1.05);
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.sideDishes{
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+}
+
+.sideDishes:hover .favoritPics{
+transform: scale(1.05);
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+.starter{
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  overflow: hidden;
+}
+.favoritPics{
+  width: 200px;
+  height: 170px;
+ 
+  transition: transform 0.3s ease;
+}
+.starter:hover .favoritPics{
+transform: scale(1.05);
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#dishSection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  
+ 
+}
+#dishSection img{
+  width: 270px;
+  height: 270px;
+
+   
+}
+
+.dishContext{
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+
+}
+.choice{
+  margin-bottom: 20px;
+}
+
+@media (max-width: 970px){
+  #dishSection img{
+    width: 200px;
+    height: 180px;
+  }
+}
+  @media (max-width: 600px){
+    #dishSection img{
+
+      width: 140px;
+      height:100px;
+    }
+    #dishSection{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+  }
+  
+}
